@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feliz Cumpleaños Papá ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #190b30, #701b65, #ed4778);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+header {
+    padding: 50px 15px 25px;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    color: #ffd166;
+    text-shadow: 0 0 20px #ff4d88;
+    animation: aparecer 2s ease-in-out;
+}
+
+h2 {
+    color: #ffd166;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.8;
+}
+
+.corazon {
+    display: inline-block;
+    color: #ff4d88;
+    animation: latido 1s infinite;
+}
+
+.tarjeta {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 30px 25px;
+    width: calc(100% - 30px);
+    border-radius: 25px;
+    background: #ffffff15;
+    border: 2px solid #ff9ac0;
+    box-shadow: 0 0 30px #ff4d8860;
+    backdrop-filter: blur(8px);
+}
+
+.decoracion {
+    font-size: 2.5rem;
+    margin: 20px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 20px 5px;
+    border: none;
+    border-radius: 30px;
+    background: #ffd166;
+    color: #42113c;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.boton:hover {
+    transform: scale(1.08);
+    background: #ff9ac0;
+}
+
+#sorpresa {
+    display: none;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ffe5a8;
+}
+
+iframe {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+footer {
+    padding: 35px 15px;
+    color: #ffe1ed;
+}
+
+.flotante {
+    position: fixed;
+    bottom: -50px;
+    pointer-events: none;
+    animation: subir 8s linear forwards;
+    z-index: 10;
+}
+
+.confeti {
+    position: fixed;
+    top: -20px;
+    width: 10px;
+    height: 15px;
+    pointer-events: none;
+    animation: caer 5s linear forwards;
+    z-index: 9;
+}
+
+@keyframes latido {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes subir {
+    to {
+        transform: translateY(-120vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes caer {
+    to {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="decoracion">🎈 🎂 🎁 🎈</div>
+
+    <h1>¡Feliz Cumpleaños!</h1>
+    <h1>❤️ Papá ❤️</h1>
+
+    <p style="margin-top:20px; font-size:1.2rem;">
+        Hoy es un día muy especial porque celebramos tu vida.
+    </p>
+</header>
+
+<section class="tarjeta">
+    <div class="decoracion">💖 🌹 💖</div>
+
+    <h2>Para el mejor papá del mundo</h2>
+
+    <p>
+        Papá, quiero desearte un cumpleaños lleno de alegría,
+        amor y bendiciones.
+        <br><br>
+
+        Gracias por tu esfuerzo, por tus consejos,
+        por cuidar de nuestra familia y por enseñarme
+        a seguir adelante.
+        <br><br>
+
+        Eres una persona muy importante en mi vida.
+        Espero que todos tus sueños se hagan realidad
+        y que nunca te falten la salud, la felicidad
+        y el amor de las personas que te queremos.
+        <br><br>
+
+        Gracias por todo lo que haces por mí.
+        ¡Te quiero muchísimo, papá!
+    </p>
+
+    <div class="decoracion">❤️ 🎂 ❤️</div>
+
+    <button class="boton" onclick="mostrarSorpresa()">
+        💌 Abrir mi sorpresa
+    </button>
+
+    <div id="sorpresa">
+        <h2>¡Te quiero, papá! ❤️</h2>
+        <p>
+            Eres mi héroe y siempre tendrás un lugar
+            especial en mi corazón.
+            <br>
+            ¡Que cumplas muchos años más! 🎉
+        </p>
+    </div>
+</section>
+
+<section class="tarjeta">
+    <h2>🎵 Una canción para ti 🎵</h2>
+
+    <p>
+        Disfruta de esta canción especial:
+        <br>
+        <strong>El Camionero — Roberto Carlos 🚛</strong>
+    </p>
+
+    <iframe
+        src="https://www.youtube-nocookie.com/embed/oGvXgOg7rmA"
+        title="El Camionero de Roberto Carlos"
+        allow="encrypted-media; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+
+    <p style="margin-top:15px;">
+        Si el reproductor no funciona, puedes abrir la canción
+        directamente en YouTube.
+    </p>
+
+    <a class="boton"
+       href="https://www.youtube.com/results?search_query=Roberto+Carlos+El+Camionero"
+       target="_blank"
+       rel="noopener noreferrer">
+       🎧 Escuchar canción
+    </a>
+</section>
+
+<footer>
+    <div class="decoracion">🎉 💝 🎈 💝 🎉</div>
+
+    <h2>¡Feliz cumpleaños, papá!</h2>
+
+    <p>Hecho con mucho amor para ti. <span class="corazon">❤️</span></p>
+</footer>
+
+<script>
+function mostrarSorpresa() {
+    const sorpresa = document.getElementById("sorpresa");
+
+    sorpresa.style.display = "block";
+
+    for (let i = 0; i < 25; i++) {
+        crearCorazon();
+        crearConfeti();
+    }
+}
+
+function crearCorazon() {
+    const corazon = document.createElement("div");
+
+    corazon.className = "flotante";
+    corazon.textContent = ["❤️", "💖", "💕", "💗"][
+        Math.floor(Math.random() * 4)
+    ];
+
+    corazon.style.left = Math.random() * 100 + "vw";
+    corazon.style.fontSize = (20 + Math.random() * 25) + "px";
+    corazon.style.animationDuration = (5 + Math.random() * 5) + "s";
+
+    document.body.appendChild(corazon);
+
+    setTimeout(() => corazon.remove(), 11000);
+}
+
+function crearConfeti() {
+    const confeti = document.createElement("div");
+
+    confeti.className = "confeti";
+    confeti.style.left = Math.random() * 100 + "vw";
+
+    const colores = [
+        "#ffd166", "#ff4d88", "#8be9fd",
+        "#ffffff", "#b8ff8f", "#c9a0ff"
+    ];
+
+    confeti.style.backgroundColor =
+        colores[Math.floor(Math.random() * colores.length)];
+
+    confeti.style.animationDuration = (3 + Math.random() * 4) + "s";
+
+    document.body.appendChild(confeti);
+
+    setTimeout(() => confeti.remove(), 8000);
+}
+
+// Efectos de cumpleaños continuos
+setInterval(crearCorazon, 500);
+setInterval(crearConfeti, 250);
+</script>
+
+</body>
+</html>
